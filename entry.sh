@@ -9,8 +9,9 @@ then
     done
 else
     printf "IPALLOW var is not set!\n"
-    printf "Adding: allow all;\n"
-    sed -i '1s@^@allow all;\n@' /etc/nginx/conf.d/ip-rules.conf
+    printf "Blocking all traffic by default\n"
+    #printf "Adding: allow all;\n"
+    #sed -i '1s@^@allow all;\n@' /etc/nginx/conf.d/ip-rules.conf
 fi
 
 exec "$@"
