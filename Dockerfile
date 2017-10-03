@@ -1,5 +1,5 @@
 FROM nginx:alpine
-LABEL BUILD_NUM="0.0.2"
+LABEL BUILD_NUM="0.0.3"
 MAINTAINER DevOps at ScienceLogic
 RUN apk update && apk add bash
 RUN rm /etc/nginx/conf.d/default.conf
